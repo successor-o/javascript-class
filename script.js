@@ -76,60 +76,135 @@
 // console.log(notFalse)
 
 // Control Structures/Control Flow (if, else)
-let age = 18
-if (age >= 19) {
-    console.log("You are an Adult!")
-} else if(age === 16){
-    console.log("You have 2 more years left to be an Adult")
-} else {
-    console.log("You are not old enough!")
-}
+// let age = 18
+// if (age >= 19) {
+//     console.log("You are an Adult!")
+// } else if(age === 16){
+//     console.log("You have 2 more years left to be an Adult")
+// } else {
+//     console.log("You are not old enough!")
+// }
 
-// Ternary Operators
-let stat = age >= 18 ? console.log("Adult") : console.log("Minor")
+// // Ternary Operators
+// let stat = age >= 18 ? console.log("Adult") : console.log("Minor")
 
-// switch statement
-let day = 3;
-switch (day) {
-    case 2: console.log("Tuesday"); break
-    case 1: console.log("Monday"); break
+// // switch statement
+// let day = 3;
+// switch (day) {
+//     case 2: console.log("Tuesday"); break
+//     case 1: console.log("Monday"); break
 
     
-    default: console.log("Not a valid day!")
-};
+//     default: console.log("Not a valid day!")
+// };
 
 // Loops
 for (let i = 1; i <= 5; i++) {
     // console.log(i)
 }
 
-let arr = ["Apple", "Banana", "Orange"]
-for (let num of arr) {
-    // console.log(num)
-}
+// let arr = ["Apple", "Banana", "Orange"]
+// for (let num of arr) {
+//     // console.log(num)
+// }
 
-// Function
-function greet() {
-    return "Hello"
-}
+// // Function
+// function greet() {
+//     return "Hello"
+// }
 
-const greetMe = greet()
-// console.log(greet())
-console.log(greetMe)
+// const greetMe = greet()
+// // console.log(greet())
+// console.log(greetMe)
 
-function calc(ar1, arg2) {
-    return ar1 + arg2
-}
-console.log(calc(88, 2))
+// function calc(ar1, arg2) {
+//     return ar1 + arg2
+// }
+// console.log(calc(88, 2))
 
-function calc_with_default_arg(ar1, arg2 = 55) {
-    return ar1 + arg2
-}
-console.log(calc_with_default_arg(10))
+// function calc_with_default_arg(ar1, arg2 = 55) {
+//     return ar1 + arg2
+// }
+// console.log(calc_with_default_arg(10))
 
 const func = () => {
     console.log("Arrow Function result")
 }
 
-func()
+// func()
 
+
+const calcAge = (a, b) => a + b;
+
+console.log(calcAge(2, 4))
+
+// Local vs Global Scope
+const name = "John"
+
+function greetings() {
+    const greet = "Hello"
+    console.log(greet + " " + name)
+
+
+}
+// console.log(greet)
+greetings()
+
+///////// hoisted
+// console.log(man)
+// const man = 1;
+let age;
+age = 23;
+
+const group = "football"
+let sub = group.slice(0, 4)
+console.log(sub)
+
+// let str = "string"
+
+// str.push("blalbal")
+
+// console.log(str)
+
+// Data Structure in Javascript
+let fruits =  ["apple", "banana", "orange", "mango", "cherry", "fish"] //index of 0 - 1.2....
+console.log(fruits[12])
+// fruits.push("mango")
+// fruits.pop()
+// fruits.shift()
+// fruits.unshift("cherry");
+// fruits.splice(1, 1, "cashew")
+// console.log(fruits)
+
+// let subset = fruits.slice()
+// console.log(subset)
+// console.log(fruits)
+
+// let LastName = "musa"
+// console.log(LastName)
+// const result = LastName.toUpperCase()
+// console.log(result)
+
+
+// Looping through Arrays: forEach(), map(), filter(), reduce()
+// fruits.forEach(fruit => console.log(fruit.toUpperCase()))
+
+let str = "Anything"
+
+// fruits.forEach(fruit => console.log(fruit))
+// let fruitsUpperCase = fruits.map(fruit => {
+//     return fruit.toUpperCase()
+// })
+// console.log(fruitsUpperCase)
+
+const longs = fruits.filter(fruit => fruit.length > 5)
+console.log(longs)
+
+let totalLength = fruits.reduce((acc, fruit) => {
+    console.log(acc)
+    console.log(fruit)
+    return acc + fruit.length, 2
+}
+)
+console.log(totalLength)
+console.log(fruits)
