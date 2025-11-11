@@ -197,14 +197,44 @@ let str = "Anything"
 // })
 // console.log(fruitsUpperCase)
 
-const longs = fruits.filter(fruit => fruit.length > 5)
-console.log(longs)
+// const longs = fruits.filter(fruit => fruit.length > 5)
+// console.log(longs)
 
-let totalLength = fruits.reduce((acc, fruit) => {
-    console.log(acc)
-    console.log(fruit)
-    return acc + fruit.length, 2
-}
-)
-console.log(totalLength)
+// let totalLength = fruits.reduce((acc, fruit) => {
+//     console.log(acc)
+//     console.log(fruit)
+//     return acc + fruit.length, 2
+// }
+// )
+// console.log(totalLength)
+// console.log(fruits)
+
+// Sorting Arrays: sort(), Finding element: find(), findIndex()
+// console.log(fruits)
+// fruits.sort();
+
 console.log(fruits)
+
+const result = fruits.find(fruit => fruit === "banana")
+console.log(result)
+
+const index = fruits.findIndex(fruit => fruit === "cherry")
+console.log(index)
+
+const items = Array("Book", "Pen", "Pencil")
+console.log(items)
+
+// Multi-Dimensional Arrays
+const numbers = [[1, 2, 3], [10, 20, 30]]
+console.log(numbers)
+
+// Objects
+// const person = Object("")
+const person = {name: "Mark", age: 23, isMarried: false}
+console.log(person)
+
+// Accessing and updating properties (dot notation, bracket notation)
+console.log(person.name)
+console.log(person["isMarried"])
+
+// Looping through Objects
