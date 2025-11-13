@@ -134,31 +134,31 @@ const func = () => {
 // func()
 
 
-const calcAge = (a, b) => a + b;
+// const calcAge = (a, b) => a + b;
 
-console.log(calcAge(2, 4))
+// console.log(calcAge(2, 4))
 
-// Local vs Global Scope
-const name = "John"
+// // Local vs Global Scope
+// const name = "John"
 
-function greetings() {
-    const greet = "Hello"
-    console.log(greet + " " + name)
+// function greetings() {
+//     const greet = "Hello"
+//     console.log(greet + " " + name)
 
 
-}
+// }
 // console.log(greet)
-greetings()
+// greetings()
 
 ///////// hoisted
 // console.log(man)
 // const man = 1;
-let age;
-age = 23;
+// let age;
+// age = 23;
 
-const group = "football"
-let sub = group.slice(0, 4)
-console.log(sub)
+// const group = "football"
+// let sub = group.slice(0, 4)
+// console.log(sub)
 
 // let str = "string"
 
@@ -167,8 +167,8 @@ console.log(sub)
 // console.log(str)
 
 // Data Structure in Javascript
-let fruits =  ["apple", "banana", "orange", "mango", "cherry", "fish"] //index of 0 - 1.2....
-console.log(fruits[12])
+// let fruits =  ["apple", "banana", "orange", "mango", "cherry", "fish"] //index of 0 - 1.2....
+// console.log(fruits[12])
 // fruits.push("mango")
 // fruits.pop()
 // fruits.shift()
@@ -189,7 +189,7 @@ console.log(fruits[12])
 // Looping through Arrays: forEach(), map(), filter(), reduce()
 // fruits.forEach(fruit => console.log(fruit.toUpperCase()))
 
-let str = "Anything"
+// let str = "Anything"
 
 // fruits.forEach(fruit => console.log(fruit))
 // let fruitsUpperCase = fruits.map(fruit => {
@@ -213,28 +213,90 @@ let str = "Anything"
 // console.log(fruits)
 // fruits.sort();
 
-console.log(fruits)
+// console.log(fruits)
 
-const result = fruits.find(fruit => fruit === "banana")
-console.log(result)
+// const result = fruits.find(fruit => fruit === "banana")
+// console.log(result)
 
-const index = fruits.findIndex(fruit => fruit === "cherry")
-console.log(index)
+// const index = fruits.findIndex(fruit => fruit === "cherry")
+// console.log(index)
 
-const items = Array("Book", "Pen", "Pencil")
-console.log(items)
+// const items = Array("Book", "Pen", "Pencil")
+// console.log(items)
 
-// Multi-Dimensional Arrays
-const numbers = [[1, 2, 3], [10, 20, 30]]
-console.log(numbers)
+// // Multi-Dimensional Arrays
+// const numbers = [[1, 2, 3], [10, 20, 30]]
+// console.log(numbers)
 
 // Objects
 // const person = Object("")
-const person = {name: "Mark", age: 23, isMarried: false}
+const person = {
+    name: "Mark", 
+    age: 23, 
+    isMarried: false
+}
 console.log(person)
 
 // Accessing and updating properties (dot notation, bracket notation)
-console.log(person.name)
-console.log(person["isMarried"])
+// console.log(person.name)
+// console.log(person["isMarried"])
 
-// Looping through Objects
+// Looping through Objects: for...in
+for (let key in person) {
+    console.log(key, person[key])
+}
+
+// const nestedArrays = [1, 2, 3, [30, 40, 50, ["peter", ]], ]
+
+// Nested Objects and Destructuring
+let nested = {
+    info: {
+        height: 170,
+        weight: 500,
+        leight: 1000
+    },
+    moreDetails: {
+        age: 45,
+        school: "St. Matthew High School"
+    }
+}
+console.log(nested)
+
+const {name, age, isMarried} = person;
+console.log(name, age, isMarried);
+
+const newObj = new Object()
+newObj.food = "rice"
+
+console.log(newObj)
+
+// const arrs = [];
+// arrs.
+
+// Sets and Maps (ES6)
+let mySet = new Set();
+mySet.add(1);
+mySet.add("Johnson")
+console.log(mySet.has("rrttt"))
+mySet.delete(1)
+console.log(mySet);
+
+let myMap = new Map();
+myMap.set("Address", "Lagos state");
+console.log(myMap.get("Address"))
+console.log(myMap)
+
+
+// Strings and Relgular Expressions
+// String Manipulation
+const str = "       Hello World    "
+console.log(str)
+console.log(str.length);
+// const res = str.trim
+console.log(str.trim());
+// const arrFromStr = Array.from(str.trim())
+// console.log(arrFromStr.join(""))
+console.log(str.trim().split(" "))
+console.log(str.replace("World", "Universe").trim().split(" "))
+
+// Embedding varaibles and expression
