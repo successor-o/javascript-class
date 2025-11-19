@@ -230,73 +230,105 @@ const func = () => {
 
 // Objects
 // const person = Object("")
-const person = {
-    name: "Mark", 
-    age: 23, 
-    isMarried: false
-}
-console.log(person)
+// const person = {
+//     name: "Mark", 
+//     age: 23, 
+//     isMarried: false
+// }
+// console.log(person)
 
 // Accessing and updating properties (dot notation, bracket notation)
 // console.log(person.name)
 // console.log(person["isMarried"])
 
 // Looping through Objects: for...in
-for (let key in person) {
-    console.log(key, person[key])
-}
+// for (let key in person) {
+//     console.log(key, person[key])
+// }
 
 // const nestedArrays = [1, 2, 3, [30, 40, 50, ["peter", ]], ]
 
 // Nested Objects and Destructuring
-let nested = {
-    info: {
-        height: 170,
-        weight: 500,
-        leight: 1000
-    },
-    moreDetails: {
-        age: 45,
-        school: "St. Matthew High School"
-    }
-}
-console.log(nested)
+// let nested = {
+//     info: {
+//         height: 170,
+//         weight: 500,
+//         leight: 1000
+//     },
+//     moreDetails: {
+//         age: 45,
+//         school: "St. Matthew High School"
+//     }
+// }
+// console.log(nested)
 
-const {name, age, isMarried} = person;
-console.log(name, age, isMarried);
+// const {name, age, isMarried} = person;
+// console.log(name, age, isMarried);
 
-const newObj = new Object()
-newObj.food = "rice"
+// const newObj = new Object()
+// newObj.food = "rice"
 
-console.log(newObj)
+// console.log(newObj)
 
-// const arrs = [];
-// arrs.
+// // const arrs = [];
+// // arrs.
 
-// Sets and Maps (ES6)
-let mySet = new Set();
-mySet.add(1);
-mySet.add("Johnson")
-console.log(mySet.has("rrttt"))
-mySet.delete(1)
-console.log(mySet);
+// // Sets and Maps (ES6)
+// let mySet = new Set();
+// mySet.add(1);
+// mySet.add("Johnson")
+// console.log(mySet.has("rrttt"))
+// mySet.delete(1)
+// console.log(mySet);
 
-let myMap = new Map();
-myMap.set("Address", "Lagos state");
-console.log(myMap.get("Address"))
-console.log(myMap)
+// let myMap = new Map();
+// myMap.set("Address", "Lagos state");
+// console.log(myMap.get("Address"))
+// console.log(myMap)
 
 
 // Strings and Relgular Expressions
 // String Manipulation
-const str = "       Hello World    "
-console.log(str)
-console.log(str.length);
-// const res = str.trim
-console.log(str.trim());
-// const arrFromStr = Array.from(str.trim())
-// console.log(arrFromStr.join(""))
-console.log(str.trim().split(" "))
-console.log(str.replace("World", "Universe").trim().split(" "))
+// const str = "       Hello World    "
+// console.log(str)
+// console.log(str.length);
+// // const res = str.trim
+// console.log(str.trim());
+// // const arrFromStr = Array.from(str.trim())
+// // console.log(arrFromStr.join(""))
+// console.log(str.trim().split(" "))
+// console.log(str.replace("World", "Universe").trim().split(" "))
 
 // Embedding varaibles and expression
+const name = "Bob";
+const age = 23;
+console.log(`Hello, ${name}, at age: ${age}`);
+console.log("Hello," + " " + "at age:" + " " + name + " " + age);
+
+// Date, Time, and Math
+const now = new Date();
+console.log(now)
+
+// Formatting Dates and Times
+console.log(now.toLocaleString()) // Local format
+console.log(now.toLocaleDateString())
+console.log(now.toLocaleTimeString())
+
+// Calculating time difference
+const testTime = new Date("2025-01-12")
+const timeDiff = now - new Date("2025-01-01");
+console.log(testTime);
+console.log(new Date(timeDiff));
+
+// Math Object
+console.log(Math.round(4.5)) // 5
+console.log(Math.round(Math.random())) // 0-1
+console.log(Math.min(11, 2, 3))
+
+// DOM (Document Object Model) Manipulation
+const element = document.getElementById("#myId")
+const element2 = document.getElementsByClassName("#mb-10")
+const elements = document.querySelectorAll(".mb-10")
+console.log(element)
+console.log(elements)
+
