@@ -326,9 +326,27 @@ console.log(Math.round(Math.random())) // 0-1
 console.log(Math.min(11, 2, 3))
 
 // DOM (Document Object Model) Manipulation
-const element = document.getElementById("#myId")
-const element2 = document.getElementsByClassName("#mb-10")
-const elements = document.querySelectorAll(".mb-10")
+// const element2 = document.getElementsByClassName("mb-10")
+// const elements = document.querySelectorAll(".mb-10")
+const element = document.getElementById("myId")
+const textCon = document.querySelector(".text_content")
 console.log(element)
-console.log(elements)
+console.log(textCon)
+// console.log(elements)
+
+// Modifying DOM elements
+element.innerHTML = '<p class="test_class">This is a paragraph coming form JS</p> <div>DOM Manipulation coming from JS</div>';
+ textCon.textContent = "Text content coming from JS";
+
+ // Wring HTML Attributes and style
+ const newEl = document.createElement("img")
+ newEl.setAttribute("src", "./img/default-avatar.jpg");
+ newEl.style.width = "40px"
+element.appendChild(newEl)
+
+
+
+
+
+
 
